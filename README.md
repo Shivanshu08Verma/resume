@@ -50,5 +50,4 @@ A modern, high-performance personal portfolio website built with **React**, **Ty
 ## 👤 Author
 
 **Shivanshu Verma** – Full-Stack Developer | B.Tech Student at IIT Patna.
-* **GitHub**: [Shivanshu08Verma](https://github.com/Shivanshu08Verma)
 * **LinkedIn**: [Shivanshu Verma](https://www.linkedin.com/in/shivanshu-verma-899575321/)
