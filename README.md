@@ -1,59 +1,54 @@
-## Project Info
+# DevPortfolio Pro
 
-## Project Directory
+A modern, high-performance personal portfolio website built with **React**, **TypeScript**, and **Tailwind CSS**. This project features a sleek "glassmorphism" design with interactive canvas-based animations for each section.
 
-```
-├── README.md # Documentation
-├── components.json # Component library configuration
-├── index.html # Entry file
-├── package.json # Package management
-├── postcss.config.js # PostCSS configuration
-├── public # Static resources directory
-│   ├── favicon.png # Icon
-│   └── images # Image resources
-├── src # Source code directory
-│   ├── App.tsx # Entry file
-│   ├── components # Components directory
-│   ├── context # Context directory
-│   ├── hooks # Common hooks directory
-│   ├── index.css # Global styles
-│   ├── layout # Layout directory
-│   ├── lib # Utility library directory
-│   ├── main.tsx # Entry file
-│   ├── pages # Pages directory
-├── tsconfig.app.json # TypeScript frontend configuration file
-├── tsconfig.json # TypeScript configuration file
-├── tsconfig.node.json # TypeScript Node.js configuration file
-└── vite.config.ts # Vite configuration file
-```
+## 🚀 Features
 
-## Tech Stack
+* **Modern Tech Stack**: Built using React 18, Vite, and TypeScript for a robust development experience.
+* **Dynamic Animations**:
+    * **Hero**: Floating orbs and connecting particle network.
+    * **About**: Organic flowing wave background.
+    * **Skills**: Interactive hexagonal grid with pulsing nodes.
+    * **Experience**: Circuit board "energy flow" animation.
+    * **Contact**: Signal ripple effect.
+* **Responsive Design**: Fully mobile-friendly navigation and layouts using Tailwind CSS.
+* **Form Validation**: Contact form with real-time validation using `react-hook-form`.
+* **SEO Optimized**: Dynamic page titles and descriptions using `react-helmet-async`.
 
-Vite, TypeScript, React
+## 🛠️ Tech Stack
 
+* **Frontend**: React, TypeScript, Tailwind CSS.
+* **Routing**: React Router DOM.
+* **Icons**: Lucide React.
+* **Components**: Radix UI primitives (Toast, Label, Slot).
+* **Styling**: Class Variance Authority (CVA) for component variants.
 
+## 📁 Project Structure
 
-### Environment Requirements
+* `src/components/portfolio/`: Main section components (Hero, About, etc.).
+* `src/components/portfolio/animation/`: Custom HTML5 Canvas animation logic.
+* `src/components/ui/`: Reusable UI components like Buttons, Cards, and Inputs.
+* `src/pages/`: Individual page layouts for routing.
+* `src/hooks/`: Custom React hooks like `use-toast`.
 
-```
-# Node.js ≥ 20
-# npm ≥ 10
-Example:
-# node -v   # v20.18.3
-# npm -v    # 10.8.2
-```
+## 💻 Getting Started
 
+1.  **Clone the repository**
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+4.  **Build for production**:
+    ```bash
+    npm run build
+    ```
 
+## 👤 Author
 
-### After installation, follow these steps:
-
-```
-# Step 1: Download the code package
-# Step 2: Extract the code package
-# Step 3: Open the code package with your IDE and navigate into the code directory
-# Step 4: In the IDE terminal, run the command to install dependencies: npm i
-# Step 5: In the IDE terminal, run the command to start the development server: npm run dev -- --host 127.0.0.1
-# Step 6: if step 5 failed, try this command to start the development server: npx vite --host 127.0.0.1
-```
-
-
+**Shivanshu Verma** – Full-Stack Developer | B.Tech Student at IIT Patna.
+* **GitHub**: [Shivanshu08Verma](https://github.com/Shivanshu08Verma)
+* **LinkedIn**: [Shivanshu Verma](https://www.linkedin.com/in/shivanshu-verma-899575321/)
