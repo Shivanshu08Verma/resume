@@ -54,4 +54,3 @@ root.render(
     </AppWrapper>
   </StrictMode>
 );
-

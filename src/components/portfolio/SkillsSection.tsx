@@ -4,12 +4,11 @@ import HexGridBackground from "./animation/HexGridBackground";
 
 const frontendSkills = [
   "React",
+  "Next.js",
   "JavaScript",
   "HTML5",
   "CSS3",
   "Tailwind CSS",
-  "Redux",
-  "Vite",
 ];
 
 const backendSkills = [
@@ -24,10 +23,12 @@ const tools = [
   "VS Code",
   "Canva",
   "Postman",
+  "Chrome DevTools (basics)"
 ];
 
 const programmingLanguages = [
   "JavaScript",
+  "TypeScript",
   "Python",
   "Java",
   "C++",

@@ -30,7 +30,7 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 xl:py-32 bg-muted/30 relative pb-20">
+    <section id="experience" className="min-h-screen py-20 xl:py-32 bg-muted/30 relative pb-20">
       <CircuitFlowBackground/>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
