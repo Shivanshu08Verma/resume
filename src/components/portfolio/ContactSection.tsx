@@ -8,6 +8,7 @@ import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import RippleBackground from "./animation/RippleBackground";
+import { supabase } from "@/lib/supabase";
 
 interface ContactFormData {
   name: string;
@@ -20,7 +21,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "shivanshuv2005@gmail.com",
+    value: "shivanshuv2005@gmail.com", 
     href: "mailto:shivanshuv2005@gmail.com",
   },
   {
@@ -71,17 +72,36 @@ export default function ContactSection() {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const { error } = await supabase.from('messages').insert([
+        {
+          full_name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+          is_read: false,
+          is_archived: false,
+        }
+      ]);
 
-    console.log("Form submitted:", data);
+      if (error) throw error;
 
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
 
-    form.reset();
-    setIsSubmitting(false);
+      form.reset();
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
