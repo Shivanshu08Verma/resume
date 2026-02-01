@@ -114,7 +114,7 @@ export default function HeroSection() {
 
                   <div className="relative w-full h-full rounded-2xl border border-primary/30 overflow-hidden bg-black/20 backdrop-blur-sm">
                     <img
-                      src="https://github.com/shadcn.png"
+                      src="photo.jpeg"
                       alt="Shivanshu Verma"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />

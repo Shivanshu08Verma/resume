@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Code, Rocket, Users } from "lucide-react";
-import WaveBackground from "./animation/WaveBackground";
 
 const highlights = [
   {
@@ -32,8 +31,13 @@ const highlights = [
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 xl:py-32 relative pb-20">
-      <WaveBackground/>
-      <div className="container mx-auto px-4">
+      <img
+        src="/about bg.png"
+        alt="About background"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div className="container mx-auto px-4 opacity-100 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl xl:text-5xl font-bold mb-4 text-white">

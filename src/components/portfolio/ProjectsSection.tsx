@@ -2,7 +2,6 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import ParticleNetworkBackground from "./animation/ParticleNetworkBackground";
 
 const projects = [
   {
@@ -29,8 +28,12 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-20 xl:py-32 relative pb-20">
-      <ParticleNetworkBackground/>
-      <div className="container mx-auto px-4">
+       <img
+        src="/project bg.png"
+        alt="Project background"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="container mx-auto px-4 opacity-100 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl xl:text-5xl font-bold mb-4 text-white">Featured Projects</h2>

@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Calendar } from "lucide-react";
-import CircuitFlowBackground from "./animation/CircuitFlowBackground";
 
 const experiences = [
   {
@@ -31,8 +30,12 @@ const experiences = [
 export default function ExperienceSection() {
   return (
     <section id="experience" className="min-h-screen py-20 xl:py-32 bg-muted/30 relative pb-20">
-      <CircuitFlowBackground/>
-      <div className="container mx-auto px-4">
+      <img
+        src="/experience bg.png"
+        alt="Experience background"
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
+      />
+      <div className="container mx-auto px-4 opacity-100 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl xl:text-5xl font-bold mb-4">Work Experience</h2>

@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code2, Database, Wrench,FileCode } from "lucide-react";
-import HexGridBackground from "./animation/HexGridBackground";
 
 const frontendSkills = [
   "React",
@@ -38,8 +37,12 @@ const programmingLanguages = [
 export default function SkillsSection() {
   return (
     <section id="skills" className="min-h-screen pt-28 relative pb-20">
-      <HexGridBackground />
-      <div className="container mx-auto px-4">
+       <img
+        src="/skills bg.png"
+        alt="Skill background"
+        className="absolute inset-0 w-full h-full object-cover opacity-85"
+      />
+      <div className="container mx-auto px-4 opacity-100 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl xl:text-5xl font-bold mb-4 text-white">Skills & Expertise</h2>

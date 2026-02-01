@@ -7,7 +7,6 @@ import { useToast } from "@/hooks/use-toast";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import RippleBackground from "./animation/RippleBackground";
 import { supabase } from "@/lib/supabase";
 
 interface ContactFormData {
@@ -106,8 +105,12 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-20 xl:py-32 relative pb-20">
-      <RippleBackground/>
-      <div className="container mx-auto px-4">
+       <img
+        src="/contact bg.png"
+        alt="Contact background"
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
+      />
+      <div className="container mx-auto px-4 opacity-100 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl xl:text-5xl font-bold mb-4">Get In Touch</h2>
